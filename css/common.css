@@ -1,0 +1,141 @@
+/* 公共样式 */
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+/* loading */
+.doupi-bd-loading{
+    margin: 20px 0;
+    text-align:center;
+}
+.doupi-bd-loading img{
+    margin:0 auto;
+}
+.doupi-bd-loading .desc{
+    margin:15px 0;
+    color: #999;
+}
+/* 美化checkbox */
+.doupi-radio {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    background: #fcfff4;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+}
+.doupi-radio label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+}
+.doupi-radio label:after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    border: 3px solid #372;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+.doupi-radio label:hover::after {
+    opacity: 0.3;
+}
+.doupi-radio input[type=checkbox] {
+    visibility: hidden;
+}
+.doupi-radio input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+/* 关闭按钮 */
+.doupi-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    font-size: 10px;
+}
+
+.doupi-close:focus {
+    outline: 0;
+}
+
+.doupi-close:before,
+.doupi-close:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -2px;
+    width: 24px;
+    height: 1px;
+    background: #555;
+    -webkit-transition: background 0.15s ease;
+            transition: background 0.15s ease;
+}
+
+.doupi-close:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.doupi-close:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+.doupi-close:hover{
+    background-color: transparent;
+}
+.doupi-close:hover:before,
+.doupi-close:hover:after {
+    background: #000;
+}
+/* 豆皮标志 */
+.doupi-border-logo{
+    position: absolute;
+    border-right: 4px solid #ffdd9c;
+    border-left: 4px solid #a8bcdc;
+}
+.doupi-border-logo-re{
+    position: absolute;
+    border-left: 4px solid #ffdd9c;
+    border-right: 4px solid #a8bcdc;
+}
+/* iconfont */
+@font-face {font-family: "iconfont";
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/iconfont.eot'); /* IE9*/
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('chrome-extension://__MSG_@@extension_id__/fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('chrome-extension://__MSG_@@extension_id__/fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('chrome-extension://__MSG_@@extension_id__/fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-ban:before { content: "\e601"; }
+.icon-close:before { content: "\e602"; }

@@ -1,0 +1,158 @@
+/* 首页搜索 */
+a.doupi-tattoo{position:absolute;right:0px;top:-24px;line-height:1.2;color:#ccc!important;}
+a.doupi-tattoo:hover{background-color:white;color:rgb(150,150,150)!important;}
+.doupi-bd{position:relative !important; border:1px solid #D7D7D7;margin:0 0 20px 0;overflow: hidden;}
+.doupi-bd input{margin:0;padding:0 0 0 20px;border:0;width:210px;height:28px;outline:0;}
+.doupi-bd input::-webkit-input-placeholder{font-size:13px;}
+.doupi-bd span{position:absolute;top:0;right:0;width:30px;height:28px;padding:0;margin:0;line-height:100%;background:transparent url(http://img3.douban.com/pics/icon/bn_srh_1.png) no-repeat 50% 50%;cursor:pointer;}
+.doupi-bd-loading{text-align:center;}
+.doupi-bd-loading img{margin:0 auto;}
+.doupi-no-bd{font:15px Arial,Helvetica,sans-serif;color:#333;line-height:150%;}
+.doupi-bd .doupi-border-logo{left:0;top:0;bottom:-15px;transform:rotate(-45deg);}
+
+/* 豆瓣小组 */
+.doupi-group .toggleSettings{
+    position: relative;
+    border-left: 4px solid #a8bcdc;
+    padding-left: 8px;
+    padding-right: 16px;
+}
+.doupi-group .toggleSettings:before{
+    content:"";
+    display:block;
+    position:absolute;
+    z-index:-1;
+    left: 0;
+    top:0;
+    bottom:0;
+    width: 0;
+    border: 2px solid #ffdd9c;
+}
+.doupi-group .toggleSettings:after{
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: none;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid #999;
+}
+.doupi-group .toggleSettings.closed:after{
+    border-top: 5px solid #999;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: none;
+}
+.doupi-group .group-settings{
+    margin-top: 35px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 3px;
+    position: relative;
+}
+.doupi-group .group-settings .doupi-border-logo-re{
+    top: 0;
+    right: 0;
+    height: 15px;
+}
+.doupi-group .group-settings.closed{
+    display: none;
+}
+.doupi-group .group-settings .arrow{
+    position: absolute;
+    left: 215px;
+    top: -7px;
+    width: 14px;
+    height: 14px;
+    background-color: #eee;
+    transform: rotate(45deg);
+}
+.doupi-group .group-settings .sort>label, .doupi-group .group-settings .ban-list label{
+    float: left;
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+    text-align: left;
+}
+.doupi-group .group-settings .sort .doupi-radio{
+    float: left;
+}
+.doupi-group .olt.sorted .title a{
+    max-width: 340px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+.doupi-group .group-settings .ban-list{
+    display: none;
+}
+.doupi-group .group-settings .ban-list label{
+    margin-top: 10px;
+}
+.doupi-group .ban-list .users{
+    float: left;
+    max-width: 360px;
+}
+.doupi-group .ban-list .users li{
+    position: relative;
+    float: left;
+    padding: 4px 15px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin: 10px 15px 0 0;
+}
+.doupi-group .ban-list .icon-close{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #eee;
+    color: #aaa;
+    line-height: 16px;
+}
+.doupi-group .ban-list .icon-close:hover{
+    background-color: #eee;
+}
+.doupi-group .olt .ban{
+    margin-left: 7px;
+    visibility: hidden;
+}
+.doupi-group .olt .creator:hover .ban{
+    visibility: visible;
+}
+.doupi-group .olt .ban:hover{
+    background-color: transparent;
+}
+.doupi-group .olt .icon-ban{
+    color: #999;
+}
+.doupi-topic .sns-bar-fav .ban{
+    position: relative;
+    display: inline-block;
+    padding: 3px 5px 3px 10px;
+    vertical-align: bottom;
+    line-height: 13px;
+    color: #777;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.doupi-topic .sns-bar-fav .ban:hover{
+    background-color: transparent;
+    border-color: #aaa;
+}
+.doupi-topic .sns-bar-fav .ban .icon-ban{
+    margin-right: 5px;
+    font-size: 14px;
+}
+.doupi-topic .ban .doupi-border-logo{
+    left:0;
+    top:0;
+    bottom:-10px;
+    transform:rotate(-45deg);
+}
